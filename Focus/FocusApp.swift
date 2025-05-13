@@ -12,7 +12,9 @@ import SwiftData
 struct FocusApp: App {
     var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            FocusPage.self,
+            FocusSection.self,
+            FocusItem.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
